@@ -1,0 +1,100 @@
+/*----------------------------------------------------------------------------------------
+header.scss
+----------------------------------------------------------------------------------------*/
+
+/*.is-mask {
+    display: none;
+    transition: all 0.5s;
+}
+
+.is-open {
+    .is-mask {
+        transition: all 0.5s;
+        display: block;
+        position: fixed;
+        background-color: #000;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        cursor: pointer;
+        z-index: 10;
+    }
+}*/
+
+.l-header {
+
+}
+
+
+
+
+@media screen and (min-width:769px) {
+    .l-header {
+
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    /* hum */
+
+    .l-header {
+        &__hum {
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+            z-index: 30;
+            cursor: pointer;
+        }
+
+        &__hum span {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: #333;
+            transition: all 0.5s;
+            border-radius: 4px;
+        }
+
+        &__hum span:nth-child(1) {
+            top: 4px;
+        }
+
+        &__hum span:nth-child(2) {
+            top: 14px;
+        }
+
+        &__hum span:nth-child(3) {
+            bottom: 4px;
+        }
+    }
+
+    .is-open {
+        .l-header {
+            &__hum span:nth-child(1) {
+                transform: translateY(10px) rotate(225deg);
+            }
+
+            &__hum span:nth-child(2) {
+                opacity: 0;
+            }
+
+            &__hum span:nth-child(3) {
+                transform: translateY(-10px) rotate(-225deg);
+            }
+
+            &__nav {
+                right: 0;
+                bottom: 0;
+            }
+
+        }
+    }
+}
