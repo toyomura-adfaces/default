@@ -1,10 +1,8 @@
 @use "Foundation/reset";
 @use "Foundation/base";
 
-
 @use "Global/mixin";
 @use "Global/variable";
-@use "Global/z-index";
 
 @use "Layout/header";
 @use "Layout/footer";
@@ -15,4 +13,3 @@
 @use "Object/Component/component";
 
 @use "Object/Utility/none";
-@use "Object/Utility/utility";

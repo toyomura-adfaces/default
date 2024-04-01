@@ -1,6 +1,6 @@
 // variableとmixinの読み込み asで任意の変数に格納する必要あり
-// @use "../Global/variable" as val;
-// @use "../Global/mixin" as mix;
+// @use "../Global/variable" as val(この部分は自由に命名してOK);
+// @use "../Global/mixin" as mix(この部分は自由に命名してOK);
 
 //asで変換したものを変数名や関数名の前に記述する必要がある(.で繋げる)
 //　呼びだす際は @inclue val.$変数名;

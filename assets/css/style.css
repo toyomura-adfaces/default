@@ -338,70 +338,6 @@ input[type=number]::-webkit-outer-spin-button {
 /*----------------------------------------------------------------------------------------
 header.scss
 ----------------------------------------------------------------------------------------*/
-/*.is-mask {
-    display: none;
-    transition: all 0.5s;
-}
-
-.is-open {
-    .is-mask {
-        transition: all 0.5s;
-        display: block;
-        position: fixed;
-        background-color: #000;
-        opacity: 0.8;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        cursor: pointer;
-        z-index: 10;
-    }
-}*/
-@media screen and (max-width: 768px) {
-  /* hum */
-  .l-header__hum {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-    z-index: 30;
-    cursor: pointer;
-  }
-  .l-header__hum span {
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #333;
-    transition: all 0.5s;
-    border-radius: 4px;
-  }
-  .l-header__hum span:nth-child(1) {
-    top: 4px;
-  }
-  .l-header__hum span:nth-child(2) {
-    top: 14px;
-  }
-  .l-header__hum span:nth-child(3) {
-    bottom: 4px;
-  }
-  .is-open .l-header__hum span:nth-child(1) {
-    transform: translateY(10px) rotate(225deg);
-  }
-  .is-open .l-header__hum span:nth-child(2) {
-    opacity: 0;
-  }
-  .is-open .l-header__hum span:nth-child(3) {
-    transform: translateY(-10px) rotate(-225deg);
-  }
-  .is-open .l-header__nav {
-    right: 0;
-    bottom: 0;
-  }
-}
 /*----------------------------------------------------------------------------------------
 footer.scss
 ----------------------------------------------------------------------------------------*/
@@ -418,25 +354,22 @@ component.scss
 none.scss
 ----------------------------------------------------------------------------------------*/
 @media (min-width: 769px) {
-  .u-tabAppea {
+  .u-tab-appea {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .u-tabNone {
+  .u-tab-none {
     display: none;
   }
 }
 @media (min-width: 481px) {
-  .u-spAppea {
+  .u-sp-appea {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  .u-spNone {
+  .u-sp-none {
     display: none;
   }
-}
-/*----------------------------------------------------------------------------------------
-utility.scss
-----------------------------------------------------------------------------------------*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
