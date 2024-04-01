@@ -1,4 +1,10 @@
-@use "../Global/variable" as val;
+// variableとmixinの読み込み asで任意の変数に格納する必要あり
+// @use "../Global/variable" as val;
+// @use "../Global/mixin" as mix;
+
+//asで変換したものを変数名や関数名の前に記述する必要がある(.で繋げる)
+//　呼びだす際は @inclue val.$変数名;
+//　呼びだす際は @inclue mix.関数名;
 
 html {
     font-weight: 500;
